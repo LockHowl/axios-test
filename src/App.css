@@ -1,0 +1,196 @@
+@import url(//db.onlinewebfonts.com/c/073a3b73a63a87e100f6bb8f003fc0d3?family=Flexo+Light);
+
+html, body, p, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.pokestrip {
+    background-color: red;
+    width: 100%;
+    height: 56px;
+    border-bottom: solid black 8px;
+    margin-bottom: 34px;
+}
+
+.pokebutton {
+    position: relative;
+    margin: auto;
+    top: 24px;
+
+    width: 56px;
+    height: 56px;
+
+    background-color: white;
+    border-radius: 100%;
+    border: black solid 8px;
+}
+
+.pokebutton:hover {
+    background-color: whitesmoke;
+}
+
+.labelCheckboxes {
+    display: flex;
+    flex-direction: row;
+    font-family: "Flexo Light";
+    justify-content: center;
+    margin: 0;
+}
+
+.labelCheckbox {
+    display: inline-block;
+    width: 85px;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+
+    width: 200px;
+    height: 270px;
+    z-index: 2;
+
+    border: solid 8px whitesmoke;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    font-family: "Flexo Light", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    animation: fadeIn 1000ms;
+}
+
+.card:hover {
+    cursor: pointer;
+    border-color: gainsboro;
+    background-color: gainsboro;
+    transform: translateY(-8px);
+}
+
+.cardImg {
+    margin: 0 auto;
+
+    width: 200px;
+
+    background-color: white;
+    border-radius: 6px;
+}
+
+.cardId {
+    margin: 0px;
+    padding: 0px;
+    
+    text-align: center;
+    color: gray;
+}
+
+.cardName {
+    margin: 5px;
+    
+    text-align: center;
+}
+
+.cardTypeTag {
+    width: 60px;
+    padding: 2px;
+
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.modalBackground {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: "hidden";
+
+    background-color: rgba(0,0,0,0.15);
+}
+
+.modalWindow {
+    position: relative;
+    transform: translateY(-45%);
+    top: 45vh;
+    margin: auto;
+
+    width: 80%;
+    max-width: 430px;
+    height: 85%;
+    max-height: 605px;
+
+    background-color:aliceblue;
+    border-radius: 8px;
+    border: solid lightblue;
+    font-family: "Flexo Light";
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.modalId {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+}
+
+.modalWrap {
+    position: relative;
+    top: 50px;
+}
+
+.modalName {
+    position: relative;
+    margin: 0;
+
+    width: 100%;  
+
+    text-align: center;
+}
+
+.modalArt {
+    display: block;
+    position: relative;
+    margin: auto;
+
+    width: 80%;
+    max-width: 250px;
+}
+
+.modalDescBox {
+    display: block;
+    margin: auto;
+
+    z-index: 999;
+    width: 90%;
+    padding: 10px;
+
+    background-color: white;
+    border-radius: 5px;
+}
+
+.note {
+    margin-bottom: 3px;
+}
+
+ @media only screen and (max-width: 600px) {    
+    .labelCheckbox {
+        font-size: 12px;
+        width: 35px;
+        margin: 0 5px;
+    }
+}
