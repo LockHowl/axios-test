@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/axios-test/static/css/main.23b1b694.css",
+    "main.css": "/axios-test/static/css/main.51bbca25.css",
     "main.js": "/axios-test/static/js/main.004c7cb8.js",
     "static/media/PokeBall.png": "/axios-test/static/media/PokeBall.3ad8d4f00f8dd2b17217.png",
     "index.html": "/axios-test/index.html",
-    "main.23b1b694.css.map": "/axios-test/static/css/main.23b1b694.css.map",
+    "main.51bbca25.css.map": "/axios-test/static/css/main.51bbca25.css.map",
     "main.004c7cb8.js.map": "/axios-test/static/js/main.004c7cb8.js.map"
   },
   "entrypoints": [
-    "static/css/main.23b1b694.css",
+    "static/css/main.51bbca25.css",
     "static/js/main.004c7cb8.js"
   ]
 }
